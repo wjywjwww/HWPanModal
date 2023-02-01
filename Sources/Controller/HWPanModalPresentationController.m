@@ -168,21 +168,23 @@
 
     if (![self.presentable shouldTransitionToState:state])
         return;
-
     [self.dragIndicatorView didChangeToState:HWIndicatorStateNormal];
     [self.presentable willTransitionToState:state];
 
     switch (state) {
         case PresentationStateLong: {
             [self snapToYPos:self.handler.longFormYPosition animated:animated];
+            [self.dragIndicatorView didChangeToState:HWIndicatorStateNormal presentationState:IndicatorPresentationStateLong];
         }
             break;
         case PresentationStateMedium: {
             [self snapToYPos:self.handler.mediumFormYPosition animated:animated];
+            [self.dragIndicatorView didChangeToState:HWIndicatorStateNormal presentationState:IndicatorPresentationStateMedium];
         }
             break;
         case PresentationStateShort: {
             [self snapToYPos:self.handler.shortFormYPosition animated:animated];
+            [self.dragIndicatorView didChangeToState:HWIndicatorStateNormal presentationState:IndicatorPresentationStateShort];
         }
             break;
     }

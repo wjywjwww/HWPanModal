@@ -4,6 +4,11 @@
 //
 //  Created by heath wang on 2019/8/9.
 //
+typedef NS_ENUM(NSInteger, IndicatorPresentationState) {
+    IndicatorPresentationStateShort NS_SWIFT_NAME(short),
+    IndicatorPresentationStateMedium NS_SWIFT_NAME(medium),
+    IndicatorPresentationStateLong NS_SWIFT_NAME(long),
+};
 
 typedef NS_ENUM(NSUInteger, HWIndicatorState) {
     HWIndicatorStateNormal NS_SWIFT_NAME(normal),     // origin state
@@ -20,6 +25,9 @@ static CGFloat const kIndicatorYOffset = 5;
  * @param state The state when drag changed.
  */
 - (void)didChangeToState:(HWIndicatorState)state;
+
+
+- (void)didChangeToState:(HWIndicatorState)state presentationState:(IndicatorPresentationState)presentationState;
 
 /**
  * Tell the size of the indicator.

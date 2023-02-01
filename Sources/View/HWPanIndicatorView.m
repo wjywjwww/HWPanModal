@@ -10,9 +10,6 @@
 
 @interface HWPanIndicatorView ()
 
-@property (nonatomic, strong) UIView *leftView;
-@property (nonatomic, strong) UIView *rightView;
-
 @property (nonatomic, assign) HWIndicatorState state;
 
 @end
@@ -109,6 +106,10 @@
 		}
 			break;
 	}
+}
+
+- (void)didChangeToState:(HWIndicatorState)state presentationState:(IndicatorPresentationState)presentationState{
+    
 }
 
 @end

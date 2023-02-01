@@ -902,7 +902,7 @@
 					};
 					B8CF43BF1F90C2C500389BFE = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = K4R83Q5KV5;
+						DevelopmentTeam = D47FY52544;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1341,7 +1341,7 @@
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K4R83Q5KV5;
+				DEVELOPMENT_TEAM = D47FY52544;
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1359,7 +1359,7 @@
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K4R83Q5KV5;
+				DEVELOPMENT_TEAM = D47FY52544;
 				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

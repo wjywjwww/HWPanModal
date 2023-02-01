@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HWPanIndicatorView : UIView <HWPanModalIndicatorProtocol>
 
+@property (nonatomic, strong) UIView *leftView;
+
+@property (nonatomic, strong) UIView *rightView;
+
 @property (nonnull, nonatomic, strong) UIColor *indicatorColor;
 
 @end
