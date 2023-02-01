@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIView *rightView;
 
+@property (nonatomic, assign) HWIndicatorState state;
+
 @property (nonnull, nonatomic, strong) UIColor *indicatorColor;
 
 @end

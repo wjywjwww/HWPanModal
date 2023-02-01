@@ -10,8 +10,6 @@
 
 @interface HWPanIndicatorView ()
 
-@property (nonatomic, assign) HWIndicatorState state;
-
 @end
 
 @implementation HWPanIndicatorView
@@ -88,10 +86,9 @@
 - (void)setState:(HWIndicatorState)state {
 	
 	_state = state;
-
+    CGFloat angle = 20 * M_PI / 180;
 	switch (state) {
 		case HWIndicatorStateNormal: {
-			CGFloat angle = 20 * M_PI / 180;
 			[self animate:^{
 				self.leftView.transform = CGAffineTransformMakeRotation(angle);
 				self.rightView.transform = CGAffineTransformMakeRotation(-angle);
@@ -105,6 +102,13 @@
 			}];
 		}
 			break;
+        case HWIndicatorStatePullUP: {
+            [self animate:^{
+                self.leftView.transform = CGAffineTransformMakeRotation(-angle);
+                self.rightView.transform = CGAffineTransformMakeRotation(angle);
+            }];
+        }
+            break;
 	}
 }
 
